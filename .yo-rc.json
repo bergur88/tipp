@@ -1,0 +1,23 @@
+{
+  "generator-m-ionic": {
+    "answers": {
+      "appName": "Tippó",
+      "appId": "basar.tipp",
+      "ionicCss": false,
+      "bowerPackages": [
+        "localforage#~1.4.0"
+      ],
+      "platforms": [
+        "ios",
+        "android",
+        "browser"
+      ],
+      "plugins": [
+        "cordova-plugin-device"
+      ],
+      "appModule": "Tippó",
+      "ecosystems": [],
+      "install": "npm"
+    }
+  }
+}

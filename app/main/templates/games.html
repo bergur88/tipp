@@ -1,0 +1,20 @@
+<ion-view view-title="List">
+  <ion-content>
+
+    <!-- content goes here -->
+    <ion-list>
+      <ion-item ng-repeat="game in ctrl.games | orderBy : ['sportId', 'competitionId']"
+        class="item-remove-animate item-avatar item-icon-right"
+        type="item-text-wrap"
+        ui-sref="main.listDetail">
+        <img src="{{game.homeCrest}}" style="width: 30px">        
+        <img src="{{game.awayCrest}}" style="width: 30px">
+        <h2>{{game.sport}} - {{ctrl.mapCountryCode(game.countryCode)}} - {{game.competition}}</h2>
+        <p>{{game.name}} - 1: {{game.home}} X: {{game.draw}} 2: {{game.away}}</p>
+        <p style="font-style: italic">{{game.datePlayed}}
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
